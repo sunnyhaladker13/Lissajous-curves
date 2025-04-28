@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Lissajous Curves</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <style>
+        html, body { margin: 0; padding: 0; overflow: hidden; /* Prevent scrollbars */ } /* Make body fill viewport */
+        body { display: flex; justify-content: center; align-items: center; background-color: #222; flex-direction: column; color: white; font-family: sans-serif;}
+        main { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } /* Canvas container */
+        .controls { position: absolute; bottom: 10px; left: 10px; background-color: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; z-index: 10; }
+        .instructions { position: absolute; top: 10px; left: 10px; background-color: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; z-index: 10; }
+        label { margin-right: 10px; }
+        input[type=range] { width: 150px; }
+    </style>
+</head>
+<body>
+    <main id="main"></main> <!-- p5.js canvas will go here -->
+    <div class="instructions">
+        Press 'P' to Pause/Resume<br>
+        Press 'R' to Reset
+    </div>
+    <div class="controls">
+        <label for="sliderA">Freq A:</label>
+        <input type="range" id="sliderA" min="1" max="10" value="3" step="0.1">
+        <span id="labelA">3</span>
+        <br>
+        <label for="sliderB">Freq B:</label>
+        <input type="range" id="sliderB" min="1" max="10" value="2" step="0.1">
+        <span id="labelB">2</span>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
