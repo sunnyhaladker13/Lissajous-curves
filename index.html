@@ -11,6 +11,9 @@
         main { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } /* Canvas container */
         .controls { position: absolute; bottom: 10px; left: 10px; background-color: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; z-index: 10; }
         .instructions { position: absolute; top: 10px; left: 10px; background-color: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; z-index: 10; }
+        .github-link { position: absolute; top: 10px; right: 10px; background-color: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px; z-index: 10; }
+        .github-link a { color: #eee; text-decoration: none; }
+        .github-link a:hover { text-decoration: underline; }
         label { margin-right: 10px; }
         input[type=range] { width: 150px; }
     </style>
@@ -20,6 +23,9 @@
     <div class="instructions">
         Press 'P' to Pause/Resume<br>
         Press 'R' to Reset
+    </div>
+    <div class="github-link">
+        <a href="https://github.com/sunnyhaladker13/Lissajous-curves" target="_blank">View on GitHub</a> <!-- Replace with your actual repo URL -->
     </div>
     <div class="controls">
         <label for="sliderA">Freq A:</label>
